@@ -1,4 +1,15 @@
-# tpcds-mysql
+tpcds-mysql
+===========
+
+## How to run
+```shell script
+docker build . -t tpcds-mysql
+docker run --rm tpcds-mysql
+```
+
+
+origin content
+==============
 This project consists of how to perform the TPC-DS benchmark on MySQL 8.0. It includes all the changes on the templates for the MySQL dialect and a script to run the pipeline locally or on the cloud such as on one instance of GCP's [Compute Engine](https://cloud.google.com/compute/). It uses the toolkit version 2.10.0 from [gregrahn's repository](https://github.com/gregrahn/tpcds-kit) since it includes MACOS as target for the building, although this repository already contains the toolkit builded for LINUX.
 
 ## How to run on GCP
